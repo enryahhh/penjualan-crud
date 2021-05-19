@@ -1,6 +1,7 @@
-@extends('barang.master')
-@section('content-barang')
-<h5 class="card-header">Tambah Barang</h5>
+@extends('layouts.master')
+@section('section-header','Data Barang')
+@section('content-section-body')
+<div class="card">
             <div class="card-body">
             @if (@session('pesan'))
             <div class="alert alert-success">
@@ -54,4 +55,5 @@
                     </div>
                 </div>
             </div>
+</div>
 @endsection

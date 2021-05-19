@@ -14,7 +14,7 @@ use App\Http\Controllers\BarangController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth/login');
 });
 
 Auth::routes();

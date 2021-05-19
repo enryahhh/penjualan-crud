@@ -1,6 +1,7 @@
-@extends('barang.master')
-@section('content-barang')
-<h5 class="card-header">Data Barang</h5>
+@extends('layouts.master')
+@section('section-header','Data Barang')
+@section('content-section-body')
+<div class="card">
 
             <div class="card-body">
             @if (@session('pesan'))
@@ -35,6 +36,7 @@
                     
                 </table>
             </div>
+</div>
 @endsection
 @push('scripts')
     {{--$dataTable->scripts()--}}

@@ -1,9 +1,10 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
-@section('content')
-<div class="container">
+@section('section-header','Dashboard')
+@section('content-section-body')
+
 <div class="row">
-    <div class="col-lg-3">
+    <!-- <div class="col-lg-3">
     <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
             <div class="card-header">Header</div>
                 <div class="card-body">
@@ -21,14 +22,28 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <div class="card card-statistic-1">
+                <div class="card-icon bg-primary">
+                  <i class="far fa-user"></i>
+                </div>
+                <div class="card-wrap">
+                  <div class="card-header">
+                    <h4>Total Admin</h4>
+                  </div>
+                  <div class="card-body">
+                    10
+                  </div>
+                </div>
+              </div>
+            </div>
 </div>
 
-    <div class="row justify-content-center">
-        @include('layouts.navbar')
+    <div class="row">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                
 
                 <div class="card-body">
                     @if (session('status'))
@@ -42,5 +57,4 @@
             </div>
         </div>
     </div>
-</div>
 @endsection
